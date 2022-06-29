@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>글로벌투자</title>
+        <!-- Required meta tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">       
+        <!-- css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!-- script -->
+        <script>
+          $(document).ready(function(){
+            $("a#idOpenChat").click(function(){
+                      $(location).attr('href',"");    
+                      $(location).attr("target", "_system");    
+              });
+              $(document).bind("contextmenu", function(e){
+                  alert("오른쪽 마우스 금지");
+                  return false;
+              });
+              $('img').bind("contextmenu",function(e){ 
+                  alert("그림에서 오른쪽 마우스 금지"); 
+                  return false; 
+              }); 
+              $('img').bind("selectstart",function(e){ 
+                  alert("그림에서 오른쪽 마우스 금지"); 
+                  return false;  
+              }); 
+          }); 
+          document.oncontextmenu=function(){return false;} // 우클릭 방지
+          setInterval(function(){
+            $(".blinkEle").toggle();
+          }, 1000);
+        </script>
+      </head>
+    <body>
+        <div class="container">
+            <!-- logo -->
+            <div class="w3-row-padding">
+              <div class="w3-under">
+                <div style="background-color: #161616">
+                    <img src="img/1box.jpg" style="width: 100%;" alt="글로벌투자">
+                    <br><br>
+                    <img src="img/2box.jpg" style="width: 100%;" alt="글로벌투자">
+                    <br><br>
+                    <img src="img/3box.png" style="width: 100%;" alt="글로벌투자">
+                    <br><br>
+                    <img src="img/4box.png" style="width: 100%;" alt="글로벌투자">
+                    <br><br>
+                    <img src="img/5box.png" style="width: 100%;" alt="글로벌투자">
+                    <br><br>
+                    <img src="img/6box.png" style="width: 100%;" alt="글로벌투자">
+
+                    <!-- <div class="box_container">
+                        <div class="box_txt">
+                            <p>
+                                많은 투자자 분들께서 주식과 선물거래에<br/>
+                                물려있다고 합니다.<br/>
+                                불황속에서 주식과 선물거래로 손실보지 마시고,<br/>
+                                요즘 트렌드인<br/>
+                                하락장 에서도 수익을 볼 수 있는 투자를 추천드립니다.<br/>
+                            </p>
+                        </div>
+                        <div class="box_txtSub">
+                            <p>
+                                1억만들기 프로젝트 실제 달성자 이용후기
+                                <p style="color:red; text-decoration:underline;">※허위 사실일 경우 민형사상 처벌 감수</p><br/>
+                            </p>
+                        </div>
+                        <img src="img/3box-1.jpg" style="width: 100%;" alt="글로벌투자">
+                    </div>    -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
