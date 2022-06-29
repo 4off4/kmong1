@@ -37,6 +37,18 @@
           setInterval(function(){
             $(".blinkEle").toggle();
           }, 1000);
+
+        
+        /*스크롤에 따라 하단 banner 나옴*/
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 600 ) {   // 버튼표시 화면비율
+                $('.scrollLink:hidden').stop(true, true).fadeIn();
+            }else {
+                $('.scrollLink').stop(true, true).fadeOut();
+            }
+        });
+        $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+        
         </script>
       </head>
     <body>
@@ -58,9 +70,17 @@
                     <img src="img/6box.png" alt="글로벌투자">
                     <br><br>
                     <img src="img/7box.png" alt="글로벌투자"> 
-                    <br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
             </div>
+        </div>
+        <div class="scrollLink" style="display: block;">
+            <a href="https://open.kakao.com/o/sjzoIrne">
+                <div class="scroll">
+                    <div class="scroll_img"></div>
+                </div>
+            </a>
+
         </div>
     </body>
 </html>
